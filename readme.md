@@ -23,3 +23,17 @@ yarn run build
 yarn run lint
 ```
 
+### 学习资源
+```
+Vue中文文档：https://cn.vuejs.org/
+
+Vue Router文档: https://router.vuejs.org/zh/
+
+Vuex文档：https://vuex.vuejs.org/zh/
+
+Vuex-class：https://github.com/ktsn/vuex-class
+
+Vue-class-component: https://github.com/vuejs/vue-class-component
+
+Vue Cli3文档：https://cli.vuejs.org/zh/
+```
