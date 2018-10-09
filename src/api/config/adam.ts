@@ -11,9 +11,9 @@ import { adamHost } from '../host';
 
 const configList: ApiConfig[] = [
   {
-    name: 'getList',
+    name: 'loadMetricDimByMart',
     method: 'get',
-    path: '/list',
+    path: '/midas/znz/dim/config/loadMetricDimByMart',
     host: adamHost,
   },
 ];

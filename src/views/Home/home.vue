@@ -36,6 +36,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 import VueGridLayout from 'vue-grid-layout';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import apis from '@/api';
 
 const GridLayout = VueGridLayout.GridLayout;
 const GridItem = VueGridLayout.GridItem;
@@ -78,6 +79,13 @@ export default class Home extends Vue {
     { x: 4, y: 2, w: 1, h: 1, i: 18 },
     { x: 4, y: 3, w: 1, h: 1, i: 19 },
   ];
+  public async created() {
+    const data = await apis('loadMetricDimByMart', {
+      martName: 'pro_cpc_r',
+    });
+    /* tslint:disable:no-console */
+    console.log(data);
+  }
 }
 </script>
 <style lang="less">

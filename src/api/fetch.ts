@@ -46,7 +46,7 @@ function fetch(urlParams: string, params?: object, options?: AxiosRequestConfig)
     url: urlParams,
     method: 'get',
   }, options);
-  handleMethodPlugin(config);
+  handleMethodPlugin(config, params);
   return axios(config).then((response: AxiosResponse) => {
     if (+response.data.code === 200) {
       return response.data;

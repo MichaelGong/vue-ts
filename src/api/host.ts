@@ -8,6 +8,7 @@
 import { Host } from '@/api/types';
 
 export const adamHost: Host = {
+  development: 'http://adam.backend.51ping.com',
   beta: 'http://adam.backend.51ping.com',
   product: 'http://adam.backend.sankuai.com',
 };
