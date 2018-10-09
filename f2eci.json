@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "npm run build"
+  },
+  "yarn": true,
+  "dist": "./dist",
+  "ignoreJsMin": true,
+  "ignoreCssMin": true
+}
