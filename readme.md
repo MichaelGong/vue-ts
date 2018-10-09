@@ -36,4 +36,8 @@ Vuex-class：https://github.com/ktsn/vuex-class
 Vue-class-component: https://github.com/vuejs/vue-class-component
 
 Vue Cli3文档：https://cli.vuejs.org/zh/
+
+TypeScript学习：https://jkchao.github.io/typescript-book-chinese/
+
+Vue.js Devtools: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN
 ```
