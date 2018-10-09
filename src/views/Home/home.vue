@@ -4,6 +4,7 @@
       alt='Vue logo'
       src='../../assets/logo.png'>
     <HelloWorld msg='Welcome to Your Vue.js + TypeScript App 哈哈哈4'/>
+    <div @click="getDataByAction">点我触发action</div>
     <GridLayout
       :layout="layout"
       :auto-size="true"
@@ -29,14 +30,22 @@
         {{item.i}}
       </GridItem>
     </GridLayout>
+    <div
+      v-for="item in Object.keys(fieldData)"
+      :key="item"
+    >
+      {{item}}
+    </div>
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
+import { State, Action } from 'vuex-class';
 import VueGridLayout from 'vue-grid-layout';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import apis from '@/api';
+import { TestStateData } from '@/store/test/types';
 
 const GridLayout = VueGridLayout.GridLayout;
 const GridItem = VueGridLayout.GridItem;
@@ -48,6 +57,7 @@ interface Ilayout {
   h: number;
   i: number;
 }
+const namespace: string = 'test';
 
 @Component({
   components: {
@@ -57,6 +67,9 @@ interface Ilayout {
   },
 })
 export default class Home extends Vue {
+  @Action('getData', { namespace }) private getData: any;
+  @State('data', { namespace }) private fieldData!: TestStateData;
+
   private layout: Ilayout[] = [
     { x: 0, y: 0, w: 1, h: 1, i: 0 },
     { x: 0, y: 1, w: 1, h: 1, i: 1 },
@@ -85,6 +98,9 @@ export default class Home extends Vue {
     });
     /* tslint:disable:no-console */
     console.log(data);
+  }
+  private getDataByAction() {
+    this.getData();
   }
 }
 </script>
