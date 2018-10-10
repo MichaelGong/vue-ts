@@ -39,5 +39,5 @@ Vue Cli3文档：https://cli.vuejs.org/zh/
 
 TypeScript学习：https://jkchao.github.io/typescript-book-chinese/
 
-Vue.js Devtools: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN
+Vue.js Devtools开发工具: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN
 ```
