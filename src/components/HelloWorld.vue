@@ -1,5 +1,7 @@
 <template>
   <div class="hello">
+    <div v-demo></div>
+    <div>{{ '2018-10-09' | formatDate }}</div>
     <h1>{{ msg }}</h1>
     <p>
       For guide and recipes on how to configure / customize this project,<br>

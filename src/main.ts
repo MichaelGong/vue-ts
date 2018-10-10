@@ -2,9 +2,12 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store/index';
+import 'ress';
 import './registerServiceWorker';
-import './plugins/element.js';
-import './api';
+import './plugins/element';
+import './directives';
+import './filters';
+import '@/css/global.less';
 
 Vue.config.productionTip = false;
 

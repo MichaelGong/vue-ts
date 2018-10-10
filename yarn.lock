@@ -5561,6 +5561,10 @@ resolve@^1.3.2, resolve@^1.5.0:
   dependencies:
     path-parse "^1.0.5"
 
+ress@^1.2.2:
+  version "1.2.2"
+  resolved "http://registry.npm.taobao.org/ress/download/ress-1.2.2.tgz#4fd00681c8d3ceaa79f5de1e54aaad15617e9777"
+
 restore-cursor@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/restore-cursor/download/restore-cursor-1.0.1.tgz#34661f46886327fed2991479152252df92daa541"

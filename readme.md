@@ -35,6 +35,8 @@ Vuex-class：https://github.com/ktsn/vuex-class
 
 Vue-class-component: https://github.com/vuejs/vue-class-component
 
+vue-property-decorator: https://github.com/kaorun343/vue-property-decorator
+
 Vue Cli3文档：https://cli.vuejs.org/zh/
 
 TypeScript学习：https://jkchao.github.io/typescript-book-chinese/
