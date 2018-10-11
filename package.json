@@ -5,12 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:report": "vue-cli-service build --report",
     "lint": "vue-cli-service lint",
     "start": "vue-cli-service serve --open"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.4.5",
+    "lodash": "^4.17.11",
     "qs": "^6.5.2",
     "register-service-worker": "^1.0.0",
     "ress": "^1.2.2",
@@ -23,15 +25,18 @@
     "vuex-class": "^0.3.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.117",
     "@types/qs": "^6.5.1",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-plugin-typescript": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "babel-plugin-component": "^1.1.1",
+    "babel-plugin-lodash": "^3.3.4",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "lint-staged": "^7.2.2",
+    "lodash-webpack-plugin": "^0.11.5",
     "typescript": "^3.0.0",
     "vue-cli-plugin-element": "^1.0.0",
     "vue-template-compiler": "^2.5.17"

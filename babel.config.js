@@ -3,6 +3,7 @@ module.exports = {
     "@vue/app"
   ],
   "plugins": [
+    "lodash",
     [
       "component",
       {
