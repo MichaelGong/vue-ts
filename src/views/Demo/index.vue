@@ -75,13 +75,23 @@
   </div>
 
   vm.$nextTick
+  <div class="demo__content">
+    <span class="demo__content--title">Mixin：</span>
+    <span class="demo__content--desc">
+      <a target="_blank" href="https://cn.vuejs.org/v2/guide/mixins.html">官网</a>
+      <div>{{ttt}}</div>
+      <el-button @click="changeTTT">修改ttt</el-button>
+    </span>
+  </div>
+  
 </div>
 </template>
 <script lang="ts">
 /* tslint:disable:no-console */
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Mixins } from 'vue-property-decorator';
 import { ComponentOptions } from 'vue';
 import SubDemo from './subDemo.vue';
+import DemoMixin from '@/mixins/demoMixin';
 function clog(preStr: any) {
   return function innerlog(str: any) {
     console.log(preStr, str);
@@ -94,7 +104,7 @@ const lifeLog = clog('生命周期:');
     SubDemo,
   },
 })
-export default class Demo extends Vue {
+export default class Demo extends Mixins(DemoMixin) {
   private msg: string = '这里是data数据';
   private num: number = 0;
   private text: string = '';
@@ -139,9 +149,13 @@ export default class Demo extends Vue {
   public errorCaptured() {
     lifeLog('errorCaptured');
   }
-
+  public changeTTT() {
+    console.log('demo index.vue changeTTT');
+    this.ttt = 'ttt3';
+  }
   private changeMsg() {
     this.msg = `${this.msg}${this.num++}`;
+    this.ttt = '====tttt';
   }
 }
 

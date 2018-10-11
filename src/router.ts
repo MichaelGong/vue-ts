@@ -6,7 +6,7 @@ Vue.use(Router);
 
 export default new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: '/',
   routes: [
     {
       path: '/',
@@ -29,4 +29,11 @@ export default new Router({
         import(/* webpackChunkName: "demo" */ './views/Demo/index.vue'),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
 });
