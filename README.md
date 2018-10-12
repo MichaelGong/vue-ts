@@ -1,4 +1,4 @@
-# Vue Portal
+# Vue TypeScript
 
 ## 技术栈
 Vue2.x + Vue Router + Vuex + typeScript + tslint
