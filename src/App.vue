@@ -11,6 +11,7 @@
     </div>
     <div id="app">
       <h1 @click="changeUserNameHandler">{{ userInfo.userName }}</h1>
+      <h1>getter获取的username: {{ userName }}</h1>
       <div id="nav">
         <router-link to="/">Home</router-link> |
         <span @click="goAbout">About</span>
@@ -22,7 +23,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { State, Action } from 'vuex-class';
+import { State, Action, Getter } from 'vuex-class';
 import { UserInfo } from '@/store/common/types';
 
 const namespace: string = 'common';
@@ -31,6 +32,7 @@ const namespace: string = 'common';
 export default class App extends Vue {
   @Action('changeUserName', { namespace }) private changeUserName: any;
   @State('userInfo', { namespace }) private userInfo!: UserInfo;
+  @Getter('userName', { namespace }) private userName!: string;
 
   public created(): void {
     // console.log('=');

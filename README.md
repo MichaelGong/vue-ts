@@ -43,3 +43,9 @@ TypeScript学习：https://jkchao.github.io/typescript-book-chinese/
 
 Vue.js Devtools开发工具: https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=zh-CN
 ```
+
+### Vue Cli 命令
+
+启动ui模式： vue ui
+
+输出webpack结构化配置：vue inspect > output.js

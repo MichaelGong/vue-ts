@@ -1,32 +1,24 @@
-import { Module, ActionTree, MutationTree } from 'vuex';
+/*
+ * @Author: gonghao
+ * @Date: 2018-10-12 10:59:35
+ * @Last Modified by: gonghao
+ * @Last Modified time: 2018-10-12 10:59:57
+ * @Desc: 通用的store
+*/
+import { Module } from 'vuex';
 import { CommonState } from '@/store/common/types';
 import { RootState } from '@/store/types';
-import { CHANGE_USERNAME } from '../constant';
-
-const commonState: CommonState = {
-  userInfo: {
-    userName: '哈哈哈',
-  },
-  currentDate: '',
-};
-
-const actions: ActionTree<CommonState, RootState> = {
-  changeUserName({ commit }): void {
-    commit(CHANGE_USERNAME);
-  },
-};
-
-const mutations: MutationTree<CommonState> = {
-  [CHANGE_USERNAME](state) {
-    state.userInfo.userName = '娃哈哈';
-  },
-};
+import state from './state';
+import actions from './actions';
+import mutations from './mutations';
+import getters from './getters';
 
 const commonModule: Module<CommonState, RootState> = {
   namespaced: true,
-  state: commonState,
+  state,
   actions,
   mutations,
+  getters,
 };
 
 export default commonModule;

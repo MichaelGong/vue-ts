@@ -7,15 +7,15 @@ import test from './test';
 Vue.use(Vuex);
 
 const store: StoreOptions<RootState> = {
-  state: {
-    version: '0.0.1',
-  },
-  mutations: {},
-  actions: {},
+  // state: {
+  //   version: '0.0.1',
+  // },
+  // mutations: {},
+  // actions: {},
   modules: {
     common,
     test,
   },
 };
 
-export default new Vuex.Store(store);
+export default new Vuex.Store<RootState>(store);
