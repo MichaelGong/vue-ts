@@ -1,6 +1,8 @@
+const path = require('path');
 const f2eci = require("./f2eci");
 module.exports = {
   baseUrl: f2eci.urlPrefix || '/',
+
   chainWebpack: config => {
     config
       .module
@@ -39,5 +41,14 @@ module.exports = {
           paths: true,
           placeholders: true,
         }]) 
+  },
+
+  pluginOptions: {
+    'style-resources-loader': {
+      preProcessor: 'less',
+      patterns: [
+        path.resolve(__dirname, 'src/css/variables/index.less'),
+      ]
+    }
   }
 }
