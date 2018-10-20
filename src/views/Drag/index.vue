@@ -1,5 +1,6 @@
 <template>
   <div class="home white h-100">
+    <h1 class="infoname">Vue的拖拽指令</h1>
     <div class="home-drag" v-drag>拖拽</div>
   </div>
 </template>

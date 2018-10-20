@@ -17,6 +17,7 @@
     "register-service-worker": "^1.0.0",
     "ress": "^1.2.2",
     "vue": "^2.5.17",
+    "vue-canvas-nest": "^2.0.0",
     "vue-class-component": "^6.0.0",
     "vue-grid-layout": "^2.2.0",
     "vue-property-decorator": "^7.0.0",

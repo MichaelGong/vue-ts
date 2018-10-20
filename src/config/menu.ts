@@ -9,6 +9,11 @@ const menuConfig: IMenuConfig[]  = [{
     name: 'vue拖拽指令',
     url: '/drag',
     icon: 'el-icon-rank',
+  }, {
+    id: 'filterhue',
+    name: 'Filter Hue',
+    url: '/filterhue',
+    icon: 'el-icon-rank',
   }],
 }, {
   id: 'react-cnode',

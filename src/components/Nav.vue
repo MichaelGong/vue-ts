@@ -1,6 +1,6 @@
 <template>
 <div class="nav nav--fixed flex flex-v">
-  <div class="nav__logo" >
+  <div class="nav__logo" @click="goHome">
     <img src="../assets/xy1.png" alt="" class="nav__logo--img">
   </div>
   <el-scrollbar class="flex-1 nav__scrollbar">
@@ -58,6 +58,9 @@ export default class ONav extends Vue {
       this.$router.push(url);
     }
   }
+  public goHome() {
+    this.$router.push('/');
+  }
 }
 </script>
 <style lang="less" >
@@ -68,6 +71,7 @@ export default class ONav extends Vue {
     line-height: 60px;
     padding-left: 25px;
     background: #002140;
+    cursor: pointer;
     &--img {
       height: 45px;
       vertical-align: middle;

@@ -6,3 +6,5 @@ declare module 'element-ui' {
   export * from 'element-ui/types';
   export class Scrollbar extends ElScrollbar {}
 }
+
+declare module 'vue-canvas-nest' {}

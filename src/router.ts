@@ -32,6 +32,12 @@ export default new Router({
         import(/* webpackChunkName: "drag" */ './views/Drag/index.vue'),
     },
     {
+      path: '/filterhue',
+      name: 'filterhue',
+      component: () =>
+        import(/* webpackChunkName: "drag" */ './views/FilterHue/index.vue'),
+    },
+    {
       path: '*',
       redirect: '/',
     },
