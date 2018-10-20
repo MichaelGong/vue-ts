@@ -2,7 +2,7 @@
  * @Author: gonghao
  * @Date: 2018-10-17 14:33:42
  * @Last Modified by: gonghao
- * @Last Modified time: 2018-10-18 14:48:45
+ * @Last Modified time: 2018-10-20 20:22:07
  * @Desc: 拖拽指令 v-drag
 */
 
@@ -36,9 +36,7 @@ const dragDirective: DirectiveOptions = {
       handlerDom = bodyDom = el;
     }
     function handleMouseDown(e: MouseEvent): void {
-      // console.log('handleMouseDown');
       const translate = resolveTransform.getTranslate(bodyDom);
-      // console.log('translate:', translate);
       if (translate) {
         transformX = (translate as number[])[0];
         transformY = (translate as number[])[1];
@@ -48,8 +46,6 @@ const dragDirective: DirectiveOptions = {
       canMove = true;
     }
     function handleMouseMove(e: MouseEvent): void {
-      // console.log('canMove:', canMove);
-      // e.preventDefault();
       if (canMove) {
         const offsetX = e.pageX - pageX + transformX;
         const offsetY = e.pageY - pageY + transformY;
@@ -57,12 +53,7 @@ const dragDirective: DirectiveOptions = {
       }
     }
     function handleMouseUp(e: MouseEvent): void {
-      // e.preventDefault();
-      // console.log('cancel');
       canMove = false;
-      // off(handlerDom, 'mousedown', handleMouseDown);
-      // off(handlerDom, 'mousemove', handleMouseMove);
-      // off(handlerDom, 'mouseup', handleMouseUp);
     }
     on(handlerDom, 'mousedown', handleMouseDown);
     on(document, 'mousemove', handleMouseMove);

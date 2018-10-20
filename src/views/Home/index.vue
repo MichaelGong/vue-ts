@@ -1,115 +1,40 @@
 <template>
-  <div class='home'>
-    <img
-      alt='Vue logo'
-      src='../../assets/logo.png'>
-    <HelloWorld msg='Welcome to Your Vue.js + TypeScript App 哈哈哈4'/>
-    <div @click="getDataByAction">点我触发action</div>
-    <GridLayout
-      :layout="layout"
-      :auto-size="true"
-      :col-num="24"
-      :row-height="50"
-      :max-rows="100"
-      :is-draggable="true"
-      :is-resizable="true"
-      :vertical-compact="false"
-      :margin="[10, 10]"
-      :use-css-transforms="true"
-    >
-      <GridItem
-        v-for="item in layout"
-        :key="item.i"
-        :x="item.x"
-        :y="item.y"
-        :w="item.w"
-        :h="item.h"
-        :i="item.i"
-        
-      >
-        {{item.i}}
-      </GridItem>
-    </GridLayout>
-    <div
-      v-for="item in Object.keys(fieldData)"
-      :key="item"
-    >
-      {{item}}
-    </div>
+  <div class="home white h-100">
+    <h1 class="name">逍遥很晕</h1>
+    <p class="info__item">职位：前端</p>
+    <p class="info__item">技能：Vue全家桶、React全家桶、Node、TypeScript、Less、Scss、ES6、Webpack、Babel</p>
+    <p class="info__item">公司：现就职于美团</p>
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'vue-property-decorator';
 import { State, Action } from 'vuex-class';
-import VueGridLayout from 'vue-grid-layout';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-import apis from '@/api';
-import { TestStateData } from '@/store/test/types';
 
-const GridLayout = VueGridLayout.GridLayout;
-const GridItem = VueGridLayout.GridItem;
-
-interface Ilayout {
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-  i: number;
-}
 const namespace: string = 'test';
 
 @Component({
   components: {
-    HelloWorld,
-    GridLayout,
-    GridItem,
   },
 })
 export default class Home extends Vue {
-  @Action('getData', { namespace }) private getData: any;
-  @State('data', { namespace }) private fieldData!: TestStateData;
-
-  private layout: Ilayout[] = [
-    { x: 0, y: 0, w: 1, h: 1, i: 0 },
-    { x: 0, y: 1, w: 1, h: 1, i: 1 },
-    { x: 0, y: 2, w: 1, h: 1, i: 2 },
-    { x: 0, y: 3, w: 1, h: 1, i: 3 },
-    { x: 1, y: 0, w: 1, h: 1, i: 4 },
-    { x: 1, y: 1, w: 1, h: 1, i: 5 },
-    { x: 1, y: 2, w: 1, h: 1, i: 6 },
-    { x: 1, y: 3, w: 1, h: 1, i: 7 },
-    { x: 2, y: 0, w: 1, h: 1, i: 8 },
-    { x: 2, y: 1, w: 1, h: 1, i: 9 },
-    { x: 2, y: 2, w: 1, h: 1, i: 10 },
-    { x: 2, y: 3, w: 1, h: 1, i: 11 },
-    { x: 3, y: 0, w: 1, h: 1, i: 12 },
-    { x: 3, y: 1, w: 1, h: 1, i: 13 },
-    { x: 3, y: 2, w: 1, h: 1, i: 14 },
-    { x: 3, y: 3, w: 1, h: 1, i: 15 },
-    { x: 4, y: 0, w: 1, h: 1, i: 16 },
-    { x: 4, y: 1, w: 1, h: 1, i: 17 },
-    { x: 4, y: 2, w: 1, h: 1, i: 18 },
-    { x: 4, y: 3, w: 1, h: 1, i: 19 },
-  ];
   public async created() {
-    const data = await apis('loadMetricDimByMart', {
-      martName: 'pro_cpc_r',
-    });
     /* tslint:disable:no-console */
-    console.log(data);
-  }
-  private getDataByAction() {
-    this.getData();
+    console.log('created');
   }
 }
 </script>
-<style lang="less">
-.vue-grid-layout {
-  user-select: none;
-}
-.vue-grid-item {
-  background: green;
+<style lang="less" scoped>
+.home {
+  padding: 40px;
+  .name {
+    font-size: 35px;
+    font-weight: 400;
+    // text-align: center;
+  }
+  .info__item {
+    margin: 10px 0;
+  }
 }
 </style>
 
