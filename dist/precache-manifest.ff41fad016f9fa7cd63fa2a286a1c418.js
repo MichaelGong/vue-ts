@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/js/about.db3eb767.js"
   },
   {
-    "revision": "b3816a1837594a3f219e83ef0ab37755",
+    "revision": "305bc1c92eae32601d538c018123e5df",
     "url": "/index.html"
   },
   {
