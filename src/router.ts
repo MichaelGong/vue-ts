@@ -38,6 +38,12 @@ export default new Router({
         import(/* webpackChunkName: "drag" */ './views/FilterHue/index.vue'),
     },
     {
+      path: '/ticket',
+      name: 'ticket',
+      component: () =>
+        import(/* webpackChunkName: "drag" */ './views/Ticket/index.vue'),
+    },
+    {
       path: '*',
       redirect: '/',
     },
