@@ -1,5 +1,5 @@
 <template>
-<div class="white min-h-100 h-100 flex flex-v">
+<div class="white h-100 flex flex-v">
   <h1 class="infoname">Filter中的hue-rotate属性的使用</h1>
   <div class="flex-1">
     <div class="hue-auto"></div>
