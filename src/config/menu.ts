@@ -14,6 +14,11 @@ const menuConfig: IMenuConfig[]  = [{
     name: 'Filter Hue',
     url: '/filterhue',
     icon: 'el-icon-rank',
+  }, {
+    id: 'ticket',
+    name: 'Ticket',
+    url: '/ticket',
+    icon: 'el-icon-rank',
   }],
 }, {
   id: 'react-cnode',
