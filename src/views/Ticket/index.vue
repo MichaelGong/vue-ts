@@ -1,10 +1,11 @@
 <template>
-<div class="ticket min-h-100 white">
-  <h1>
+<div class="ticket min-h-100">
+  <h1 style="margin-bottom: 15px;font-size: 20px;">实现一个门票的效果</h1>
+  <p>
     1、如果背景颜色可以固定或没有特殊需求的话，可以利用定位的方式将小圆点定位过去，方法比较简单，不写代码了
-  </h1>
+  </p>
   <div class="ticket-item ticket-1" >
-    <h1>2、利用before、after的border-radius实现(最外层不能有背景颜色)</h1>
+    <p>2、利用before、after的border-radius实现(最外层不能有背景颜色)</p>
     <div class="ticket-content">
       <div class="ticket-content-top"></div>
       <div class="ticket-content-middle ticket-1-content-middle"></div>
@@ -12,22 +13,25 @@
     </div>
   </div>
   <div class="ticket-item ticket-2">
-    <h1>3、利用mask实现</h1>
+    <p>3、利用mask实现</p>
     <div class="ticket-content ticket-2-content">
     </div>
   </div>
   <div class="ticket-item ticket-3">
-    <h1>4、利用radial-gradient实现</h1>
+    <p>4、利用radial-gradient实现</p>
     <div class="ticket-content">
       <div class="ticket-content-top"></div>
       <div class="ticket-content-middle ticket-3-content-middle"></div>
       <div class="ticket-content-bottom"></div>
     </div>
   </div>
-  <!-- https://codepen.io/HelKyle/pen/yRvRyG
+  <!--
+  https://codepen.io/HelKyle/pen/yRvRyG
   https://codepen.io/lrenhrda/pen/BnKeE
   http://lea.verou.me/2011/03/beveled-corners-negative-border-radius-with-css3-gradients/
-  http://dabblet.com/gist/10168919 -->
+  http://dabblet.com/gist/10168919
+  https://juejin.im/post/5bc8184ee51d450e81090d94?utm_source=gold_browser_extension
+  -->
 </div>
 </template>
 
