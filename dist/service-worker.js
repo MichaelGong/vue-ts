@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.bfb5c6e893b7c49eada339e02a35a2b9.js"
+  "/precache-manifest.a3fd86c0592d7a6f91454a426f95195f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "kepler-portal-static"});
