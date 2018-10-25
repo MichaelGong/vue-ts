@@ -30,7 +30,7 @@ const dragDirective: DirectiveOptions = {
         handlerDom = bodyDom = el.querySelector(binding.value);
       } else if (checkType(binding.value, 'Object')) {
         handlerDom = el.querySelector(binding.value.handler);
-        bodyDom = el.querySelector(binding.value.body);
+        bodyDom = el.querySelector(binding.value.body) || el;
       }
     } else {
       handlerDom = bodyDom = el;
