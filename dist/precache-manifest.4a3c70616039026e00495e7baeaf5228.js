@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/css/drag.afdf9806.css"
   },
   {
-    "revision": "79b0528e40aacd0c7381c794747573d4",
+    "revision": "29af953d8aaf5863de276022a29dec48",
     "url": "/index.html"
   },
   {

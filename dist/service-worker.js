@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.109f89723fba1f8e0cab1149c1c8f44f.js"
+  "/precache-manifest.4a3c70616039026e00495e7baeaf5228.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "kepler-portal-static"});
+workbox.core.setCacheNameDetails({prefix: "lab.happybug.top"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
