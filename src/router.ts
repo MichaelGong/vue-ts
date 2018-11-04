@@ -35,13 +35,18 @@ export default new Router({
       path: '/filterhue',
       name: 'filterhue',
       component: () =>
-        import(/* webpackChunkName: "drag" */ './views/FilterHue/index.vue'),
+        import(/* webpackChunkName: "filterhue" */ './views/FilterHue/index.vue'),
     },
     {
       path: '/ticket',
       name: 'ticket',
       component: () =>
-        import(/* webpackChunkName: "drag" */ './views/Ticket/index.vue'),
+        import(/* webpackChunkName: "ticket" */ './views/Ticket/index.vue'),
+    }, {
+      path: '/audio',
+      name: 'audio',
+      component: () =>
+        import(/* webpackChunkName: "audio" */ './views/Audio/index.vue'),
     },
     {
       path: '*',

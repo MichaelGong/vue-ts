@@ -8,17 +8,18 @@ const menuConfig: IMenuConfig[]  = [{
     id: 'drag',
     name: 'vue拖拽指令',
     url: '/drag',
-    icon: 'el-icon-rank',
   }, {
     id: 'filterhue',
     name: 'Filter Hue',
     url: '/filterhue',
-    icon: 'el-icon-rank',
   }, {
     id: 'ticket',
     name: 'Ticket',
     url: '/ticket',
-    icon: 'el-icon-rank',
+  }, {
+    id: 'audio',
+    name: 'Audio',
+    url: '/audio',
   }],
 }, {
   id: 'react-cnode',

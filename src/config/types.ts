@@ -4,7 +4,7 @@ export interface IMenuConfig {
   /** 中文名 */
   name: string;
   /** 菜单icon */
-  icon: string;
+  icon?: string;
   /** url */
   url?: string;
   /** 是否被激活 */
