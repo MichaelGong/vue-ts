@@ -42,11 +42,18 @@ export default new Router({
       name: 'ticket',
       component: () =>
         import(/* webpackChunkName: "ticket" */ './views/Ticket/index.vue'),
-    }, {
+    },
+    {
       path: '/audio',
       name: 'audio',
       component: () =>
         import(/* webpackChunkName: "audio" */ './views/Audio/index.vue'),
+    },
+    {
+      path: '/cube',
+      name: 'cube',
+      component: () =>
+        import(/* webpackChunkName: "cube" */ './views/Cube/index.vue'),
     },
     {
       path: '*',

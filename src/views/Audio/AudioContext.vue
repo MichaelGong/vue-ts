@@ -2,7 +2,7 @@
  * @Author: gonghao
  * @Date: 2018-11-04 22:13:06
  * @Last Modified by: gonghao
- * @Last Modified time: 2018-11-04 22:13:51
+ * @Last Modified time: 2018-11-05 10:29:17
  * @Desc: AudioContext
  * https://www.zhangxinxu.com/wordpress/2017/06/html5-web-audio-api-js-ux-voice/
 */
@@ -17,11 +17,9 @@ import { Component, Vue } from 'vue-property-decorator';
 export default class OAudioContext extends Vue {
   public audioCtx: AudioContext = new AudioContext();
   // 发出的声音频率数据，表现为音调的高低，数值越大，声音越清脆，数值越小，声音越低沉
-  public arrFrequency: number[] = [
-    196.00, 220.00, 246.94, 261.63, 293.66, 329.63,
-    349.23, 392.00, 440.00, 493.88, 523.25, 587.33,
-    659.25, 698.46, 783.99, 880.00, 987.77, 1046.50,
-  ];
+  // tslint:disable:max-line-length
+  public arrFrequency: number[] = [196, 220, 246.94, 261.63, 293.66, 329.63, 349.23, 392, 440, 493.88, 523.25, 587.33, 659.25, 698.46, 783.99, 880, 987.77, 1046.5];
+
   public start: number = 0;
   public direction = 1;
 
