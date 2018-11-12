@@ -18,7 +18,7 @@ module.exports = {
     config
       .plugin('define')
         .tap(args => {
-          args[0]['process.env']['CI_ENV'] = f2eci.env || '"development"'; // beta, ppe, product
+          args[0]['process.env']['CI_ENV'] = f2eci.env ? JSON.stringify(f2eci.env) : '"development"'; // beta, ppe, product
           return args;
         })
         .end()
