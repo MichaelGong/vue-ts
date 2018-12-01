@@ -2,7 +2,9 @@ const path = require('path');
 const f2eci = require("./f2eci");
 module.exports = {
   baseUrl: f2eci.urlPrefix || '/',
-
+  configureWebpack: {
+    devtool: 'source-map',
+  },
   chainWebpack: config => {
     config
       .module
