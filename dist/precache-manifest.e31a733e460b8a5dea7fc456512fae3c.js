@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/css/filterhue.64bd8301.css"
   },
   {
-    "revision": "a07144214579a3e23df2",
-    "url": "/js/app.3beae126.js"
+    "revision": "9b9381e5c6c445f900d1",
+    "url": "/js/app.4f5a3851.js"
   },
   {
     "revision": "ac23bf1b711c62712660",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/media/rise.d1f4b629.mp3"
   },
   {
-    "revision": "4461e459938060722033",
-    "url": "/js/chunk-vendors.be23a5bb.js"
+    "revision": "680cd4bef295c028391d",
+    "url": "/js/chunk-vendors.95aa7862.js"
   },
   {
     "revision": "41eafb839b59e74c59d2",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/js/filterhue.a3e7e623.js"
   },
   {
-    "revision": "c585b9ceb5069d0b113b",
-    "url": "/js/demo.5fa61a40.js"
+    "revision": "0960ac1621140aa2766f",
+    "url": "/js/demo.54a579a7.js"
   },
   {
-    "revision": "4461e459938060722033",
-    "url": "/css/chunk-vendors.aedaea81.css"
+    "revision": "680cd4bef295c028391d",
+    "url": "/css/chunk-vendors.4e2d062a.css"
   },
   {
     "revision": "70ac3aed819de9a6107a",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/css/ticket.561d0c32.css"
   },
   {
-    "revision": "3077fd94ca76932b2673bf0627bfc346",
+    "revision": "5b345487466c72fa449dec0b9a7dff51",
     "url": "/index.html"
   },
   {
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/fonts/element-icons.6f0a7632.ttf"
   },
   {
-    "revision": "c585b9ceb5069d0b113b",
+    "revision": "0960ac1621140aa2766f",
     "url": "/css/demo.3ca844c5.css"
   },
   {
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/css/audio.5977623c.css"
   },
   {
-    "revision": "a07144214579a3e23df2",
-    "url": "/css/app.96549034.css"
+    "revision": "9b9381e5c6c445f900d1",
+    "url": "/css/app.3ad82a32.css"
   }
 ];
