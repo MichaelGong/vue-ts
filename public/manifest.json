@@ -1,6 +1,6 @@
 {
-  "name": "lab.happybug.top",
-  "short_name": "lab.happybug.top",
+  "name": "vueCliTest3",
+  "short_name": "vueCliTest3",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",

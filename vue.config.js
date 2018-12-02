@@ -56,6 +56,13 @@ module.exports = {
       // ...other Workbox options...
       skipWaiting: true,
       clientsClaim: true,
+    },
+    iconPaths: {
+      favicon32: 'favicon.ico',
+      favicon16: 'favicon48.ico',
+      appleTouchIcon: 'favicon.ico',
+      maskIcon: 'favicon.ico',
+      msTileImage: 'favicon.ico',
     }
   },
   pluginOptions: {
