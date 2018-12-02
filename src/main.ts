@@ -5,6 +5,7 @@ import store from './store/index';
 import 'ress';
 import './registerServiceWorker';
 import './plugins/element';
+import './plugins/raven';
 import './directives';
 import './filters';
 import '@/css/global.less';
@@ -16,3 +17,5 @@ new Vue({
   store,
   render: (h) => h(App),
 }).$mount('#app');
+
+throw new Error('dddd');

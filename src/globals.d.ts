@@ -8,3 +8,10 @@ declare module 'element-ui' {
 }
 
 declare module 'vue-canvas-nest' {}
+
+declare module 'raven-js/plugins/vue' {
+  import Vue from 'vue';
+  import { RavenStatic } from 'raven-js';
+  function vuePlugin(raven: RavenStatic, vue: Vue): RavenStatic;
+  export = vuePlugin;
+}
