@@ -1,9 +1,12 @@
 const path = require('path');
 const f2eci = require("./f2eci");
+const isPro = process.env.NODE_ENV === 'production';
 module.exports = {
   baseUrl: f2eci.urlPrefix || '/',
-  configureWebpack: {
-    devtool: 'source-map',
+  configureWebpack: config => {
+    if (isPro) {
+      config.devtool = 'source-map';
+    }
   },
   chainWebpack: config => {
     config
@@ -44,7 +47,17 @@ module.exports = {
           placeholders: true,
         }]) 
   },
-
+  pwa: {
+    // configure the workbox plugin
+    // workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      // swSrc is required in InjectManifest mode.
+      // swSrc: 'dev/sw.js',
+      // ...other Workbox options...
+      skipWaiting: true,
+      clientsClaim: true,
+    }
+  },
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'less',

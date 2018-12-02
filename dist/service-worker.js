@@ -14,10 +14,13 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.e31a733e460b8a5dea7fc456512fae3c.js"
+  "/precache-manifest.f347c117346553e39add37a09b6da2db.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "lab.happybug.top"});
+
+workbox.skipWaiting();
+workbox.clientsClaim();
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
