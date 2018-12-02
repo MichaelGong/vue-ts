@@ -1,6 +1,9 @@
 const path = require('path');
 const f2eci = require("./f2eci");
 const isPro = process.env.NODE_ENV === 'production';
+const sentryRelease = new Date().getTime();
+const SENTRY_API_KEY = '44c48b8185184208b9587e5806aa0520009eb7d7af4c4b409fe37e8b37fdb884';
+
 module.exports = {
   baseUrl: f2eci.urlPrefix || '/',
   configureWebpack: config => {
@@ -24,6 +27,7 @@ module.exports = {
       .plugin('define')
         .tap(args => {
           args[0]['process.env']['CI_ENV'] = f2eci.env ? JSON.stringify(f2eci.env) : '"development"'; // beta, ppe, product
+          args[0]['process.env']['sentryRelease'] = JSON.stringify(sentryRelease);
           return args;
         })
         .end()
@@ -45,7 +49,16 @@ module.exports = {
           flattening: true,
           paths: true,
           placeholders: true,
-        }]) 
+        }])
+        .end()
+      .plugin('sentry')
+        .use(require.resolve('webpack-sentry-plugin'), [{
+          organization: 'sentry',
+          project: 'vuelab',
+          apiKey: SENTRY_API_KEY,
+          release: sentryRelease,
+          baseSentryURL: 'https://sentry.happybug.top/api/0',
+        }])
   },
   pwa: {
     // configure the workbox plugin

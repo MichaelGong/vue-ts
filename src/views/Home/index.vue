@@ -26,6 +26,7 @@ export default class Home extends Vue {
   public async created() {
     /* tslint:disable:no-console */
     console.log('created');
+    throw new Error('Error');
   }
 }
 </script>
