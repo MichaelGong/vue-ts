@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/js/filterhue.c9712694.js"
   },
   {
-    "revision": "cc977406d70f1fa70b77",
-    "url": "/js/app.c44ce895.js"
+    "revision": "f97023709efba01d59e2",
+    "url": "/js/app.8c73f6f2.js"
   },
   {
     "revision": "c6cdb52cffff76be643c",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/img/ticket.f92949fc.svg"
   },
   {
-    "revision": "655e1627797fc9340f49ee9e8392cf73",
+    "revision": "6073c3fecb228fd440526bb54dbe2c25",
     "url": "/index.html"
   },
   {
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/css/audio.5977623c.css"
   },
   {
-    "revision": "cc977406d70f1fa70b77",
-    "url": "/css/app.2218ddf5.css"
+    "revision": "f97023709efba01d59e2",
+    "url": "/css/app.96549034.css"
   }
 ];

@@ -1,8 +1,26 @@
 const path = require('path');
 const f2eci = require("./f2eci");
 const isPro = process.env.NODE_ENV === 'production';
-const sentryRelease = new Date().getTime();
+const sentryRelease = getTime();
 const SENTRY_API_KEY = '44c48b8185184208b9587e5806aa0520009eb7d7af4c4b409fe37e8b37fdb884';
+
+function getTime() {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  const hour = date.getHours();
+  const minute = date.getMinutes();
+  const second = date.getSeconds();
+
+  return year.toString()
+    + (month > 9 ? month : ('0' + month))
+    + (day > 9 ? day : ('0' + day))
+    + (hour > 9 ? hour : ('0' + hour))
+    + (minute > 9 ? minute : ('0' + minute))
+    + (second > 9 ? second : ('0' + second))
+
+}
 
 module.exports = {
   baseUrl: f2eci.urlPrefix || '/',
