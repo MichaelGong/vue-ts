@@ -21,7 +21,7 @@ const menuConfig: IMenuConfig[]  = [{
     name: 'Audio',
     url: '/audio',
   }, {
-    id: 'jstypeconversion',
+    id: 'JS类型转换',
     name: 'JSTypeConversion',
     url: '/jstypeconversion',
   }],
