@@ -9,7 +9,7 @@
     "build:report": "vue-cli-service build --report",
     "start": "vue-cli-service serve --open",
     "sentry:map": "sentry-cli releases -o sentry -p vuelab files product@0.0.2 upload-sourcemaps ./dist/js --url-prefix https://lab.happybug.top/js/ --rewrite",
-    "sentry:del": "sentry-cli releases -o sentry -p vuelab delete product@0.0.1"
+    "sentry:del": "sentry-cli releases -o sentry -p vuelab delete 1543739699115"
   },
   "dependencies": {
     "axios": "^0.18.0",

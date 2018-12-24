@@ -68,8 +68,9 @@ module.exports = {
           paths: true,
           placeholders: true,
         }])
-        .end()
-      .plugin('sentry')
+        .end();
+    if (isPro) {
+      config.plugin('sentry')
         .use(require.resolve('webpack-sentry-plugin'), [{
           organization: 'sentry',
           project: 'vuelab',
@@ -77,6 +78,7 @@ module.exports = {
           release: sentryRelease,
           baseSentryURL: 'https://sentry.happybug.top/api/0',
         }])
+    }
   },
   pwa: {
     // configure the workbox plugin

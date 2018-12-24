@@ -56,6 +56,12 @@ export default new Router({
         import(/* webpackChunkName: "cube" */ './views/Cube/index.vue'),
     },
     {
+      path: '/jstypeconversion',
+      name: 'jstypeconversion',
+      component: () =>
+        import(/* webpackChunkName: "JSTypeConversion" */ './views/JSTypeConversion/index.vue'),
+    },
+    {
       path: '*',
       redirect: '/',
     },

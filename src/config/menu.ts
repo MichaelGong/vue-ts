@@ -20,6 +20,10 @@ const menuConfig: IMenuConfig[]  = [{
     id: 'audio',
     name: 'Audio',
     url: '/audio',
+  }, {
+    id: 'jstypeconversion',
+    name: 'JSTypeConversion',
+    url: '/jstypeconversion',
   }],
 }, {
   id: 'react-cnode',
