@@ -37,8 +37,7 @@
     "vue-template-compiler": "^2.5.21"
   },
   "gitHooks": {
-    "prepare-commit-msg": "git cz --hook",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged && exec < /dev/tty && git cz --hook"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
