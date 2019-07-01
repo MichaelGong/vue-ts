@@ -10,6 +10,7 @@
     "change-log": "conventional-changelog -p atom -i CHANGELOG.md -s"
   },
   "dependencies": {
+    "@types/core-js": "^2.5.2",
     "core-js": "^2.6.5",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
+    "@types/eslint": "^4.16.6",
     "@vue/cli-plugin-babel": "^3.7.0",
     "@vue/cli-plugin-eslint": "^3.7.0",
     "@vue/cli-plugin-pwa": "^3.7.0",
