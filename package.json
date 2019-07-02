@@ -6,8 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "change-log": "conventional-changelog -p atom -i CHANGELOG.md -s",
     "commit": "git-cz",
-    "change-log": "conventional-changelog -p atom -i CHANGELOG.md -s"
+    "lint:style": "vue-cli-service lint:style --fix"
   },
   "dependencies": {
     "@types/core-js": "^2.5.2",
@@ -20,6 +21,7 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
     "@types/eslint": "^4.16.6",
@@ -40,8 +42,19 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "lint-staged": "^8.1.5",
+    "stylelint-config-primer": "^2.2.5",
     "typescript": "^3.4.3",
     "vue-template-compiler": "^2.5.21"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "gitHooks": {
     "prepare-commit-msg": "exec < /dev/tty && git cz --hook",
@@ -52,16 +65,10 @@
     "*.{js,ts,vue}": [
       "vue-cli-service lint",
       "git add"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
+    ],
+    "*.{vue,css,less,scss}": [
+      "vue-cli-service lint:style --fix",
+      "git add"
     ]
   }
 }
