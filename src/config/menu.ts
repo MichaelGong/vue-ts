@@ -25,6 +25,10 @@ const menuConfig: IMenuConfig[]  = [{
     name: 'JS类型转换',
     url: '/jstypeconversion',
   }, {
+    id: 'cssweight',
+    name: 'Css选择器与权重',
+    url: '/cssweight',
+  }, {
     id: 'knowledge',
     name: '知识点',
     url: '/knowledge',

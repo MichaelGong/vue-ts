@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "4c1060193e30d0c7d453",
-    "url": "/css/JSTypeConversion.64f62fdc.css"
+    "revision": "570525cc451aba9a7b05",
+    "url": "/css/JSTypeConversion.e9e32047.css"
   },
   {
-    "revision": "4c1060193e30d0c7d453",
-    "url": "/js/JSTypeConversion.e0f37cb0.js"
+    "revision": "570525cc451aba9a7b05",
+    "url": "/js/JSTypeConversion.5d21ff17.js"
   },
   {
     "revision": "9ed5719fe50e973cea1f",
     "url": "/js/about.272d30b8.js"
   },
   {
-    "revision": "f50246999a7358502a36",
+    "revision": "a547eeadd61c4139e654",
     "url": "/css/app.09b1dc70.css"
   },
   {
-    "revision": "f50246999a7358502a36",
-    "url": "/js/app.3c60c8a6.js"
+    "revision": "a547eeadd61c4139e654",
+    "url": "/js/app.5a5a34cb.js"
   },
   {
     "revision": "2e485f9382827ff59a42",
@@ -68,12 +68,12 @@ self.__precacheManifest = [
     "url": "/js/filterhue.e16ecc4c.js"
   },
   {
-    "revision": "fc2cfcbd25bdb60e465f",
-    "url": "/css/knowledge.0a1e54b0.css"
+    "revision": "c0963b2143825d0e5b5f",
+    "url": "/css/knowledge.32461759.css"
   },
   {
-    "revision": "fc2cfcbd25bdb60e465f",
-    "url": "/js/knowledge.f9647d05.js"
+    "revision": "c0963b2143825d0e5b5f",
+    "url": "/js/knowledge.832fd0a2.js"
   },
   {
     "revision": "053fba6e246f0cdd8a97",
@@ -104,6 +104,10 @@ self.__precacheManifest = [
     "url": "/img/jstypeconversion.29dcf4c7.jpg"
   },
   {
+    "revision": "1416798593701b1ed71e2ef5474c5b48",
+    "url": "/img/cssweight.14167985.png"
+  },
+  {
     "revision": "f8b00b7bfefd44dc56071cc637fc6aee",
     "url": "/img/xy1.f8b00b7b.png"
   },
@@ -112,15 +116,15 @@ self.__precacheManifest = [
     "url": "/img/hue.aab78121.jpg"
   },
   {
-    "revision": "67a5a98d4fe81946c1abea15806d2b7d",
+    "revision": "00ca7630a6ade5aa85c309a9f1e16359",
     "url": "/index.html"
-  },
-  {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
   },
   {
     "revision": "4a9ab858cf2132c3a60b66009f9ff87a",
     "url": "/favicon48.ico"
+  },
+  {
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/robots.txt"
   }
 ];

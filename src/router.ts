@@ -62,6 +62,12 @@ export default new Router({
         import(/* webpackChunkName: "JSTypeConversion" */ './views/JSTypeConversion/index.vue'),
     },
     {
+      path: '/cssweight',
+      name: 'cssweight',
+      component: () =>
+        import(/* webpackChunkName: "JSTypeConversion" */ './views/CssWeight/index.vue'),
+    },
+    {
       path: '/knowledge',
       name: 'knowledge',
       component: () =>
