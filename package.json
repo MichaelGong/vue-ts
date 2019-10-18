@@ -12,6 +12,8 @@
     "sentry:del": "sentry-cli releases -o sentry -p vuelab delete 1543739699115"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/raven-js": "^3.10.0",
     "axios": "^0.18.0",
     "element-ui": "^2.4.5",
     "lodash": "^4.17.11",
@@ -29,8 +31,8 @@
     "vuex-class": "^0.3.1"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.117",
-    "@types/qs": "^6.5.1",
+    "@types/lodash": "^4.14.135",
+    "@types/qs": "^6.5.3",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-plugin-typescript": "^3.0.4",
