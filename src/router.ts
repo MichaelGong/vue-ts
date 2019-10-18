@@ -62,6 +62,12 @@ export default new Router({
         import(/* webpackChunkName: "JSTypeConversion" */ './views/JSTypeConversion/index.vue'),
     },
     {
+      path: '/knowledge',
+      name: 'knowledge',
+      component: () =>
+        import(/* webpackChunkName: "knowledge" */ './views/Knowledge/index.vue'),
+    },
+    {
       path: '*',
       redirect: '/',
     },

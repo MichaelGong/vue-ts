@@ -24,6 +24,10 @@ const menuConfig: IMenuConfig[]  = [{
     id: 'jstypeconversion',
     name: 'JS类型转换',
     url: '/jstypeconversion',
+  }, {
+    id: 'knowledge',
+    name: '知识点',
+    url: '/knowledge',
   }],
 }, {
   id: 'react-cnode',
