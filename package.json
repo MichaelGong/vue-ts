@@ -33,10 +33,10 @@
   "devDependencies": {
     "@types/lodash": "^4.14.135",
     "@types/qs": "^6.5.3",
-    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-pwa": "^3.0.4",
     "@vue/cli-plugin-typescript": "^3.0.4",
-    "@vue/cli-service": "^3.0.4",
+    "@vue/cli-service": "^5.0.8",
     "babel-plugin-component": "^1.1.1",
     "babel-plugin-lodash": "^3.3.4",
     "less": "^3.0.4",
